@@ -1,0 +1,18 @@
+Inner Join: Returns only matching rows.
+Outer Join: Returns matching rows plus non-matching rows from one or both tables.
+
+    Left Outer Join: Returns all rows from the left table, with matching rows from the right.
+    Right Outer Join: Returns all rows from the right table, with matching rows from the left.
+    Full Outer Join: Returns rows when there's a match in either left or right table.
+
+Cross Join: Returns the Cartesian product of the two tables.
+
+Inner Join example - 
+SELECT emp.ename, dept.dname
+FROM emp
+INNER JOIN dept ON emp.deptno = dept.deptno;
+
+Outer Join example -
+SELECT emp.ename, dept.dname
+FROM emp
+LEFT OUTER JOIN dept ON emp.deptno = dept.deptno;
